@@ -1,0 +1,519 @@
+* {
+    list-style: none;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
+.logo{
+color: black;
+text-align: center;
+padding: 25px 0;
+}
+
+body {
+    background-color: white;
+    height: 100%;
+}
+
+#icon {
+  margin-top: 7px;
+}
+a {
+    text-decoration: none;
+    width: 150px;
+    text-align: center;
+    color: black;
+}
+
+header {
+    width: 100%;
+    background: none;
+    position: relative;
+    transition: .4s;
+    z-index: 2;
+}
+
+
+header:hover{
+  background-color: black;
+}
+
+header:hover a {
+  color: #ffffffff;
+}
+header:hover .login {
+  color: #ffffffff
+}
+
+
+.login {
+  position: fixed;
+  right: 50px;
+  top: 30px;
+}
+
+.header__menu-1 {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+  
+.header__menu-1 > ul ul {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0%;
+    width:100%;
+}
+  
+  
+.header__menu-1 > ul {
+    display:inline-block;
+    padding:0px 20px;
+    border-radius:10px;
+}
+  
+.header__menu-1 > ul > li {
+    display:inline-block;
+}
+  
+.header__menu-1 ul > li > a {
+    display:block;
+    color: white;
+    padding: 20px 30px;
+}
+#icon {
+  display: none;
+  color: white;
+}
+.header__menu-1 ul > li:hover > div > a + #icon {
+    color: white;
+    display: block;
+}
+
+.header__menu-1 ul > li > a {
+  background-color: #1e1e1e;
+  opacity: 0.8;
+  z-index: 3;
+}
+
+.header__menu-1 ul > li:hover > a {
+  color: #808080;
+}
+
+.header__menu-1 ul > li:hover > ul {
+    display:block;
+    
+}
+
+.header__menu-1 ul > li {
+    position:relative;
+}
+.self {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50px;
+}
+.markgonimg {
+  width: 30%;
+  display: block;
+  margin: 5px auto;
+}
+.footer{
+  background-color: #2d2d2d;
+  color: #ffffffff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+}
+.footertext{
+  text-align: center;
+  color: #555;
+  line-height: 1.5;
+  font-size: 80%;
+}
+.markgonicon{
+  width: 4%;  
+  position: fixed;
+  filter: opacity(0.15) drop-shadow(0 0 0 black);
+  border-radius: 70%;
+}
+
+
+#sectioncontroll {
+  display: flex;
+  justify-content: center;
+}
+
+.wow {
+  position: relative;
+  width: 500px;
+  height: 643px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  margin-top: 1%;
+  margin-left: 2%;
+  margin-bottom: 2%;
+
+}
+.wow2 {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  margin-top: 3%;
+  margin-left: 4%;
+}
+
+
+#slider ul {
+  position: relative;
+  list-style: none;
+  height: 100%;
+  width: 10000%;
+  padding: 0;
+  margin: 0;
+  transition: all 750ms ease;
+  left: 0;
+}
+#slider ul li {
+  position: relative;
+  height: 100%;
+ 
+  float: left;
+}
+.wow ul li img{
+  width: 500px;
+  height: 643px;
+}
+.wow2 ul li img{
+  width: 500px;
+  height: 500px;
+}
+
+#slider #prev, #slider #next {
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 2rem;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 150ms ease;
+}
+#slider #prev:hover, #slider #next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0;
+}
+#slider #prev {
+  left: 10px;
+}
+#slider #next {
+  right: 10px;
+}
+ 
+#slider #prev2, #slider #next2 {
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 2rem;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 150ms ease;
+}
+#slider #prev2:hover, #slider #next2:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0;
+}
+#slider #prev2 {
+  left: 10px;
+}
+#slider #next2 {
+  right: 10px;
+}
+
+
+.silder-LEE-icon {
+  position: fixed;
+  z-index: 1;
+  margin-left: 225px;
+}
+
+.Markgonzales-Text {
+  text-align: center;
+}
+
+.NationalGeographic-Text {
+  text-align: center;
+}
+#slider .silder-markgon-icon {
+  width: 50px;
+  position: fixed;
+  z-index: 2;
+  margin-left: 125px;
+  border-radius: 70%;
+}
+
+#slider .silder-national-icon {
+  width: 50px;
+  position: fixed;
+  z-index: 1;
+  margin-left: 92px;
+}
+
+.boder_view {
+  position: relative;
+}
+
+.boder_view h3 {
+  text-align: center;
+
+}
+.boder_view img{
+  border: 3px solid black;
+  margin-left: 60px;
+  margin-top: 10px;
+}
+
+
+.boder_view_2 {
+  position: relative;
+}
+
+.boder_view_2 h3 {
+  text-align: center;
+
+}
+.boder_view_2 img{
+  border: 3px solid black;
+  margin-left: 60px;
+  margin-top: 25px;
+}
+
+.boder_view_img1:hover {
+  background: url(images/markgonmantomanback.jpeg) no-repeat;
+  width: 500px;
+  height: 649px;
+  padding-left: 500px;
+}
+
+.boder_view_img2:hover {
+  background: url(images/markgongroomback.jpeg) no-repeat;
+  width: 500px;
+  height: 649px;
+  padding-left: 500px;
+}
+.boder_view_img3:hover {
+  background: url(images/markgonhodieback.jpeg) no-repeat;
+  width: 500px;
+  height: 649px;
+  padding-left: 500px;
+}
+
+.boder_view_img1_2:hover {
+  background: url(images/markgonmantomanback.jpeg) no-repeat;
+  width: 500px;
+  height: 649px;
+  padding-left: 500px;
+}
+
+.boder_view_img2_2:hover {
+  background: url(images/markgonmantomangoback.jpeg) no-repeat;
+  width: 500px;
+  height: 649px;
+  padding-left: 500px;
+}
+.boder_view_img3_2:hover {
+  background: url(images/markgonmantomandoubleback.jpeg) no-repeat;
+  width: 500px;
+  height: 649px;
+  padding-left: 500px;
+}
+
+.boder_view_img1_3:hover {
+  background: url(images/markgonhodieback.jpeg) no-repeat;
+  width: 500px;
+  height: 649px;
+  padding-left: 500px;
+}
+
+.boder_view_img2_3:hover {
+  background: url(images/markgonhodieangleback.jpeg) no-repeat;
+  width: 500px;
+  height: 649px;
+  padding-left: 500px;
+}
+.boder_view_img3_3:hover {
+  background: url(images/markgonhodiedrawback.jpeg) no-repeat;
+  width: 500px;
+  height: 649px;
+  padding-left: 500px;
+}
+
+.boder_view_img1_4:hover {
+  background: url(images/markgonpantiboreback.jpeg) no-repeat;
+  width: 500px;
+  height: 649px;
+  padding-left: 500px;
+}
+
+.boder_view_img2_4:hover {
+  background: url(images/markgonpantnaback.jpeg) no-repeat;
+  width: 500px;
+  height: 649px;
+  padding-left: 500px;
+}
+.boder_view_img3_4:hover {
+  background: url(images/markgonpantblackback.jpeg) no-repeat;
+  width: 500px;
+  height: 649px;
+  padding-left: 500px;
+}
+
+.boder_view_img1_5:hover {
+  background: url(images/markgonouterwearblackback.jpeg) no-repeat;
+  width: 500px;
+  height: 649px;
+  padding-left: 500px;
+}
+
+.boder_view_img2_5:hover {
+  background: url(images/markgonouterweardoubleback.jpeg) no-repeat;
+  width: 500px;
+  height: 649px;
+  padding-left: 500px;
+}
+.boder_view_img3_5:hover {
+  background: url(images/markgonouterweariboreback.jpeg) no-repeat;
+  width: 500px;
+  height: 649px;
+  padding-left: 500px;
+}
+
+
+.h3_controll {
+  position: absolute;
+  left: 225px;
+  bottom: 60px;
+}
+
+.h3_controll2 {
+  position: absolute;
+  left: 770px;
+  bottom: 60px;
+}
+
+.h3_controll3 {
+  position: absolute;
+  right: 210px;
+  bottom: 60px;
+}
+
+
+.h3_controll_2 {
+  position: absolute;
+  left: 200px;
+  bottom: 10px;
+}
+
+.h3_controll2_2 {
+  position: absolute;
+  left: 810px;
+  bottom: 5px;
+}
+
+.h3_controll3_2 {
+  position: absolute;
+  right: 200px;
+  bottom: 5px;
+}
+
+.h3_controll_3 {
+  position: absolute;
+  left: 200px;
+  bottom: 8px;
+}
+
+.h3_controll2_3 {
+  position: absolute;
+  left: 770px;
+  bottom: 8px;
+}
+
+.h3_controll3_3 {
+  position: absolute;
+  right: 210px;
+  bottom: 8px;
+}
+
+.h3_controll_4 {
+  position: absolute;
+  left: 200px;
+  bottom: 15px;
+}
+
+.h3_controll2_4 {
+  position: absolute;
+  left: 770px;
+  bottom: 15px;
+}
+
+.h3_controll3_4 {
+  position: absolute;
+  right: 210px;
+  bottom: 15px;
+}
+
+.h3_controll_5 {
+  position: absolute;
+  left: 80px;
+  bottom: -50px;
+}
+
+.h3_controll2_5 {
+  position: absolute;
+  left: 660px;
+  bottom: -50px;
+}
+
+.h3_controll3_5 {
+  position: absolute;
+  right: 180px;
+  bottom: -50px;
+}
+
+.h3_controll_6 {
+  position: absolute;
+  left: 130px;
+  bottom: -50px;
+}
+
+.h3_controll2_6 {
+  position: absolute;
+  left: 750px;
+  bottom: -50px;
+}
+
+.h3_controll3_6 {
+  position: absolute;
+  right: 160px;
+  bottom: -50px;
+}
